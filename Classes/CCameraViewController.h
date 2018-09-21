@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraViewController : UIViewController
+@interface CCameraViewController : UIViewController
 
 //拍照按钮
 @property (nonatomic) UIButton *takePhotoButton;

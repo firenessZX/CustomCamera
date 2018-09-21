@@ -13,7 +13,7 @@
 		C06028312153BFC600796AAF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028272153BFC500796AAF /* RootViewController.m */; };
 		C06028332153BFC600796AAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028292153BFC500796AAF /* AppDelegate.m */; };
 		C0DEFF1F215481EA0083B054 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF18215481EA0083B054 /* BrowseViewController.m */; };
-		C0DEFF20215481EA0083B054 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1A215481EA0083B054 /* CameraViewController.m */; };
+		C0DEFF20215481EA0083B054 /* CCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1A215481EA0083B054 /* CCameraViewController.m */; };
 		C0DEFF21215481EA0083B054 /* UIImage+saveToAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1C215481EA0083B054 /* UIImage+saveToAlbum.m */; };
 		C0DEFF22215481EA0083B054 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1E215481EA0083B054 /* UIImage+TintColor.m */; };
 		C0DEFF77215495E80083B054 /* Asset.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0DEFF76215495E80083B054 /* Asset.bundle */; };
@@ -31,8 +31,8 @@
 		C060282C2153BFC600796AAF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		C0DEFF17215481EA0083B054 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
 		C0DEFF18215481EA0083B054 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
-		C0DEFF19215481EA0083B054 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		C0DEFF1A215481EA0083B054 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		C0DEFF19215481EA0083B054 /* CCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCameraViewController.h; sourceTree = "<group>"; };
+		C0DEFF1A215481EA0083B054 /* CCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCameraViewController.m; sourceTree = "<group>"; };
 		C0DEFF1B215481EA0083B054 /* UIImage+saveToAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+saveToAlbum.h"; sourceTree = "<group>"; };
 		C0DEFF1C215481EA0083B054 /* UIImage+saveToAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+saveToAlbum.m"; sourceTree = "<group>"; };
 		C0DEFF1D215481EA0083B054 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 				C0DEFF78215495FB0083B054 /* Resource */,
 				C0DEFF17215481EA0083B054 /* BrowseViewController.h */,
 				C0DEFF18215481EA0083B054 /* BrowseViewController.m */,
-				C0DEFF19215481EA0083B054 /* CameraViewController.h */,
-				C0DEFF1A215481EA0083B054 /* CameraViewController.m */,
+				C0DEFF19215481EA0083B054 /* CCameraViewController.h */,
+				C0DEFF1A215481EA0083B054 /* CCameraViewController.m */,
 				C0DEFF1B215481EA0083B054 /* UIImage+saveToAlbum.h */,
 				C0DEFF1C215481EA0083B054 /* UIImage+saveToAlbum.m */,
 				C0DEFF1D215481EA0083B054 /* UIImage+TintColor.h */,
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DEFF20215481EA0083B054 /* CameraViewController.m in Sources */,
+				C0DEFF20215481EA0083B054 /* CCameraViewController.m in Sources */,
 				C0DEFF21215481EA0083B054 /* UIImage+saveToAlbum.m in Sources */,
 				C060281A2153BFA100796AAF /* main.m in Sources */,
 				C06028312153BFC600796AAF /* RootViewController.m in Sources */,

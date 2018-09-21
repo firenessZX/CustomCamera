@@ -6,13 +6,13 @@
 //  Copyright © 2018年 速成. All rights reserved.
 //
 
-#import "CameraViewController.h"
+#import "CCameraViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "UIImage+saveToAlbum.h"
 #import <Photos/Photos.h>
 #import "BrowseViewController.h"
 #import "UIImage+TintColor.h"
-@interface CameraViewController ()<AVCapturePhotoCaptureDelegate>
+@interface CCameraViewController ()<AVCapturePhotoCaptureDelegate>
 
 //捕获设备，通常是前置摄像头，后置摄像头，麦克风（音频输入）
 @property(nonatomic) AVCaptureDevice * captureDevice;
@@ -62,7 +62,7 @@
 
 @end
 
-@implementation CameraViewController
+@implementation CCameraViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
