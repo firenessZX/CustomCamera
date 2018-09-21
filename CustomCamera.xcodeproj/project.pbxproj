@@ -10,12 +10,12 @@
 		C06028142153BFA100796AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06028132153BFA100796AAF /* Assets.xcassets */; };
 		C06028172153BFA100796AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06028152153BFA100796AAF /* LaunchScreen.storyboard */; };
 		C060281A2153BFA100796AAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028192153BFA100796AAF /* main.m */; };
-		C060282F2153BFC600796AAF /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028232153BFC500796AAF /* BrowseViewController.m */; };
-		C06028302153BFC600796AAF /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028262153BFC500796AAF /* CameraViewController.m */; };
 		C06028312153BFC600796AAF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028272153BFC500796AAF /* RootViewController.m */; };
-		C06028322153BFC600796AAF /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028282153BFC500796AAF /* UIImage+TintColor.m */; };
 		C06028332153BFC600796AAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C06028292153BFC500796AAF /* AppDelegate.m */; };
-		C06028342153BFC600796AAF /* UIImage+saveToAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = C060282B2153BFC600796AAF /* UIImage+saveToAlbum.m */; };
+		C0DEFF1F215481EA0083B054 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF18215481EA0083B054 /* BrowseViewController.m */; };
+		C0DEFF20215481EA0083B054 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1A215481EA0083B054 /* CameraViewController.m */; };
+		C0DEFF21215481EA0083B054 /* UIImage+saveToAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1C215481EA0083B054 /* UIImage+saveToAlbum.m */; };
+		C0DEFF22215481EA0083B054 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEFF1E215481EA0083B054 /* UIImage+TintColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,17 +25,17 @@
 		C06028182153BFA100796AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C06028192153BFA100796AAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C06028202153BFC500796AAF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C06028212153BFC500796AAF /* UIImage+saveToAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+saveToAlbum.h"; sourceTree = "<group>"; };
-		C06028232153BFC500796AAF /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
-		C06028242153BFC500796AAF /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		C06028262153BFC500796AAF /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		C06028272153BFC500796AAF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		C06028282153BFC500796AAF /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintColor.m"; sourceTree = "<group>"; };
 		C06028292153BFC500796AAF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C060282A2153BFC600796AAF /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
-		C060282B2153BFC600796AAF /* UIImage+saveToAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+saveToAlbum.m"; sourceTree = "<group>"; };
 		C060282C2153BFC600796AAF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		C060282D2153BFC600796AAF /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		C0DEFF17215481EA0083B054 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		C0DEFF18215481EA0083B054 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
+		C0DEFF19215481EA0083B054 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		C0DEFF1A215481EA0083B054 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		C0DEFF1B215481EA0083B054 /* UIImage+saveToAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+saveToAlbum.h"; sourceTree = "<group>"; };
+		C0DEFF1C215481EA0083B054 /* UIImage+saveToAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+saveToAlbum.m"; sourceTree = "<group>"; };
+		C0DEFF1D215481EA0083B054 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
+		C0DEFF1E215481EA0083B054 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +68,11 @@
 		C06028092153BFA100796AAF /* CustomCamera */ = {
 			isa = PBXGroup;
 			children = (
+				C0DEFF16215481EA0083B054 /* Classes */,
 				C06028202153BFC500796AAF /* AppDelegate.h */,
 				C06028292153BFC500796AAF /* AppDelegate.m */,
-				C060282D2153BFC600796AAF /* BrowseViewController.h */,
-				C06028232153BFC500796AAF /* BrowseViewController.m */,
-				C06028242153BFC500796AAF /* CameraViewController.h */,
-				C06028262153BFC500796AAF /* CameraViewController.m */,
 				C060282C2153BFC600796AAF /* RootViewController.h */,
 				C06028272153BFC500796AAF /* RootViewController.m */,
-				C06028212153BFC500796AAF /* UIImage+saveToAlbum.h */,
-				C060282B2153BFC600796AAF /* UIImage+saveToAlbum.m */,
-				C060282A2153BFC600796AAF /* UIImage+TintColor.h */,
-				C06028282153BFC500796AAF /* UIImage+TintColor.m */,
 				C06028132153BFA100796AAF /* Assets.xcassets */,
 				C06028152153BFA100796AAF /* LaunchScreen.storyboard */,
 				C06028182153BFA100796AAF /* Info.plist */,
@@ -87,6 +80,21 @@
 			);
 			path = CustomCamera;
 			sourceTree = "<group>";
+		};
+		C0DEFF16215481EA0083B054 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0DEFF17215481EA0083B054 /* BrowseViewController.h */,
+				C0DEFF18215481EA0083B054 /* BrowseViewController.m */,
+				C0DEFF19215481EA0083B054 /* CameraViewController.h */,
+				C0DEFF1A215481EA0083B054 /* CameraViewController.m */,
+				C0DEFF1B215481EA0083B054 /* UIImage+saveToAlbum.h */,
+				C0DEFF1C215481EA0083B054 /* UIImage+saveToAlbum.m */,
+				C0DEFF1D215481EA0083B054 /* UIImage+TintColor.h */,
+				C0DEFF1E215481EA0083B054 /* UIImage+TintColor.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -157,13 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06028302153BFC600796AAF /* CameraViewController.m in Sources */,
-				C06028322153BFC600796AAF /* UIImage+TintColor.m in Sources */,
-				C060282F2153BFC600796AAF /* BrowseViewController.m in Sources */,
+				C0DEFF20215481EA0083B054 /* CameraViewController.m in Sources */,
+				C0DEFF21215481EA0083B054 /* UIImage+saveToAlbum.m in Sources */,
 				C060281A2153BFA100796AAF /* main.m in Sources */,
 				C06028312153BFC600796AAF /* RootViewController.m in Sources */,
+				C0DEFF22215481EA0083B054 /* UIImage+TintColor.m in Sources */,
+				C0DEFF1F215481EA0083B054 /* BrowseViewController.m in Sources */,
 				C06028332153BFC600796AAF /* AppDelegate.m in Sources */,
-				C06028342153BFC600796AAF /* UIImage+saveToAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
