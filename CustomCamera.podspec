@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/firenessZX/CustomCamera.git"
   s.license      = "MIT"
-  s.author             = { "张雄" => "fireness@163.com" }
+  s.author             = { "firenessZX" => "fireness@163.com" }
    s.platform     = :ios
    s.platform     = :ios, "8.0"
    s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://github.com/firenessZX/CustomCamera.git", :tag => {s.version.to_s} }
+  s.source       = { :git => "https://github.com/firenessZX/CustomCamera.git", :tag => {s.version} }
 
   s.source_files  = "Classes", "CustomCamera/Classes/**/*.{h,m}"
   s.resources = 'CustomCamera/Classes/Resource/Asset/*.{png,xib}'

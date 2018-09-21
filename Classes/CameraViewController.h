@@ -10,6 +10,7 @@
 
 @interface CameraViewController : UIViewController
 
-
+//拍照按钮
+@property (nonatomic) UIButton *takePhotoButton;
 
 @end

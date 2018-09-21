@@ -29,11 +29,7 @@
 //图像预览层，实时显示捕获的图像
 @property(nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 
-// ------------- UI --------------
-//拍照按钮
-@property (nonatomic) UIButton *takePhotoButton;
-//闪光灯按钮
-@property (nonatomic) UIButton *flashButton;
+
 //聚焦
 @property (nonatomic) CALayer *focusBox;
 
@@ -42,6 +38,9 @@
 
 //是否开启闪光灯
 @property (nonatomic) BOOL isflashOn;
+
+//闪光灯按钮
+@property (nonatomic) UIButton *flashButton;
 
 //切换前置后置摄像头按钮
 @property (nonatomic) UIButton *switchCameraButton;
@@ -58,7 +57,7 @@
 /** 闪光灯模式*/
 @property (nonatomic,assign) AVCaptureFlashMode  flashMode;
 
-/**摄像头n模式*/
+/**摄像头模式*/
 @property (nonatomic,assign) AVCaptureDevicePosition position;
 
 @end
