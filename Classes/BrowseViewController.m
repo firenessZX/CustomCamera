@@ -34,7 +34,9 @@
     
     UIButton * closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     closeBtn.frame = CGRectMake(20, self.view.frame.size.height - 60, 40, 40);
-    [closeBtn setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+    NSString * imagePath = [[NSBundle mainBundle]pathForResource:@"Asset" ofType:@"bundle"];
+    imagePath = [imagePath stringByAppendingString:@"/close"];
+    [closeBtn setImage:[UIImage imageNamed:imagePath] forState:UIControlStateNormal];
     [closeBtn addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
     closeBtn.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.6];
     [self.view addSubview:closeBtn];

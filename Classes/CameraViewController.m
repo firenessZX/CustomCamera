@@ -155,8 +155,11 @@
             _flashButton = [UIButton buttonWithType:UIButtonTypeCustom];
             _flashButton.frame = CGRectMake(20, 20, 40, 40);
             _flashButton.titleLabel.font = [UIFont systemFontOfSize:15];
-            [_flashButton setImage:[[UIImage imageNamed:@"flash"] tintImageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
-            [_flashButton setImage:[[UIImage imageNamed:@"flash"] tintImageWithColor:[UIColor cyanColor]]forState:UIControlStateSelected];
+            NSString * imagePath = [[NSBundle mainBundle]pathForResource:@"Asset" ofType:@"bundle"];
+            imagePath = [imagePath stringByAppendingString:@"/flash"];
+            [_flashButton setImage:[[UIImage imageNamed:imagePath] tintImageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        
+            [_flashButton setImage:[[UIImage imageNamed:imagePath] tintImageWithColor:[UIColor cyanColor]]forState:UIControlStateSelected];
             [_flashButton addTarget:self action:@selector(flashButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
     }
@@ -169,8 +172,10 @@
         
        _switchCameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
        _switchCameraButton.frame = CGRectMake(self.view.frame.size.width - 60 , 20, 40, 40);
-        [_switchCameraButton setImage:[[UIImage imageNamed:@"flip"]tintImageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
-        [_switchCameraButton setImage:[[UIImage imageNamed:@"flip"]tintImageWithColor:[UIColor cyanColor]] forState:UIControlStateSelected];
+        NSString * imagePath = [[NSBundle mainBundle]pathForResource:@"Asset" ofType:@"bundle"];
+        imagePath = [imagePath stringByAppendingString:@"/flip"];
+        [_switchCameraButton setImage:[[UIImage imageNamed:imagePath] tintImageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+        [_switchCameraButton setImage:[[UIImage imageNamed:imagePath]tintImageWithColor:[UIColor cyanColor]] forState:UIControlStateSelected];
         [_switchCameraButton addTarget:self action:@selector(switchCameraButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _switchCameraButton;
@@ -182,7 +187,9 @@
         
         _closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _closeButton.frame = CGRectMake(20, self.view.frame.size.height - 60, 40, 40);
-        [_closeButton setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+        NSString * imagePath = [[NSBundle mainBundle]pathForResource:@"Asset" ofType:@"bundle"];
+        imagePath = [imagePath stringByAppendingString:@"/close"];
+        [_closeButton setImage:[UIImage imageNamed:imagePath] forState:UIControlStateNormal];
         [_closeButton addTarget:self action:@selector(closeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeButton;
@@ -194,7 +201,9 @@
         
         _takePhotoButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _takePhotoButton.frame = CGRectMake(self.view.frame.size.width/2 - 40, self.view.frame.size.height - 80, 80, 80);
-        [_takePhotoButton setImage:[UIImage imageNamed:@"trigger"] forState:UIControlStateNormal];
+        NSString * imagePath = [[NSBundle mainBundle]pathForResource:@"Asset" ofType:@"bundle"];
+        imagePath = [imagePath stringByAppendingString:@"/trigger"];
+        [_takePhotoButton setImage:[UIImage imageNamed:imagePath] forState:UIControlStateNormal];
         [_takePhotoButton addTarget:self action:@selector(takePictureAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _takePhotoButton;
