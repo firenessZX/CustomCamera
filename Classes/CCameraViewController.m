@@ -26,6 +26,9 @@
 /*session：由他把输入输出结合在一起，并开始启动捕获设备（摄像头）*/
 @property (nonatomic,strong) AVCaptureSession *captureSession;
 
+/**视频连接*/
+@property (nonatomic,strong) AVCaptureConnection *connection;
+
 //图像预览层，实时显示捕获的图像
 @property(nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 
@@ -85,6 +88,7 @@
     
     [self.photoLibraryButton setImage:self.photoArray.firstObject forState:UIControlStateNormal];
     
+
 }
 
 #pragma mark ——————— 配置相机的一些属性 ———————
@@ -101,6 +105,10 @@
     //生成会话，用来结合输入输出
     self.captureSession = [[AVCaptureSession alloc]init];
     
+    //建立视频连接
+    self.connection = [self.photoOutput connectionWithMediaType:AVMediaTypeVideo];
+    
+    
     if ([self.captureSession canSetSessionPreset:AVCaptureSessionPreset1280x720]) {
         [self.captureSession setSessionPreset:AVCaptureSessionPreset1280x720];
     }
@@ -111,6 +119,10 @@
     
     if ([self.captureSession canAddOutput:self.photoOutput]) {
         [self.captureSession addOutput:self.photoOutput];
+    }
+    
+    if ([self.captureSession canAddConnection:self.connection]) {
+        [self.captureSession addConnection:self.connection];
     }
     
       //使用self.session，初始化预览层，self.session负责驱动input进行信息的采集，layer负责把图像渲染显示
@@ -314,15 +326,8 @@
 
 - (void)takePictureAction:(UIButton*)sender{
     
-    AVCaptureConnection * videoConnection = [self.photoOutput connectionWithMediaType:AVMediaTypeVideo];
-    
-    if (videoConnection == nil) {
-        return;
-        
-    }
-    
     //图像设置,AVCapturePhotoSettings每拍一张照就需要重新初始化一次，不能重复使用
-    AVCapturePhotoSettings * photoSettings = [AVCapturePhotoSettings photoSettingsWithFormat:@{AVVideoCodecKey:AVVideoCodecJPEG}];
+    AVCapturePhotoSettings * photoSettings = [AVCapturePhotoSettings photoSettings];
     
     photoSettings.flashMode = self.flashMode;
     

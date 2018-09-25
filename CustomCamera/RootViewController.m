@@ -10,6 +10,7 @@
 #import "CCameraViewController.h"
 @interface RootViewController ()
 
+
 @end
 
 @implementation RootViewController
@@ -39,6 +40,7 @@
 - (void)takePhotoBtnClick:(UIButton*)sender {
 
     CCameraViewController * cameraVC = [[CCameraViewController alloc]init];
+    
     [self presentViewController:cameraVC animated:YES completion:nil];
     
 }
